@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Flex-Box</title>
+</head>
+
+<body>         <!--Texto título-->
+               <h1>Flex Box</h1>
+               <div class="bt">
+                <p>Outros Exemplo de Calculo e Alinhamento<p>
+            <a href="fun-calc.html" target="_blank" rel="noopener noreferrer">Clique Aqui</a>
+            </div>
+
+            <p>Container 01 Display Block</p>
+            <div class="container">
+                <div class="item">Elemento 01</div>
+                <div class="item">Elemento 02</div>
+                <div class="item">Elemento 03</div> <!--Div por padrão com Display Block-->
+                <div class="item">Elemento 04</div>
+                <div class="item">Elemento 05</div>
+            </div>
+
+            <p>Container 02 Display Flex</p>
+            <div class="container display-flex">
+                <div class="item">Flex Item 01</div>
+                <div class="item">Flex Item 02</div>
+                <div class="item">Flex Item 03</div> <!--os flex itens agora é flexivel ele se estica confome a div container-->
+                <div class="item">Flex Item 04</div>
+                <div class="item">Flex Item 05</div>
+            </div>
+
+            <p>Flex Direction Row Revese</p>
+            <div class="container display-flex direction-rom-revese">
+                <div class="item2">Flex Item 01</div>
+                <div class="item2">Flex Item 02</div>
+                <div class="item2">Flex Item 03</div> <!--com as propriedades row revese os elementos filhos muda de posição-->
+                <div class="item2">Flex Item 04</div> <!--row siguinifica que os itens vão ficar na horizontal 'revese' muda a sequencia-->
+                <div class="item2">Flex Item 05</div>
+            </div>
+
+                            <p>Flex Direction Column Revese</p>
+                            <div class="container display-flex flexdirection-column-revese">
+                               <div class="item2">Flex Item 01</div>
+                               <div class="item2">Flex Item 02</div>
+                               <div class="item2">Flex Item 03</div> <!--os flex itens agora é flexivel ele se estica confome a div container-->
+                               <div class="item2">Flex Item 04</div> <!--se aplicar só o column ele muda para coluna apenas os itens igual se fosse display bock-->
+                               <div class="item2">Flex Item 05</div>
+                            </div>
+
+                            <p>Flex Wrap Nowrap</p>
+                            <div class="container display-flex flexwrap-nowrap">
+                                <div class="item3">Flex Item 01</div>
+                                <div class="item3">Flex Item 02</div>
+                                <div class="item3">Flex Item 03</div> 
+                                <div class="item3">Flex Item 04</div> 
+                                <div class="item3">Flex Item 05</div>
+                                <div class="item3">Flex Item 06</div> <!--flexwrap-nowrap não deixa os itens pular de linha-->
+                                <div class="item3">Flex Item 07</div>
+                                <div class="item3">Flex Item 08</div>
+                                <div class="item3">Flex Item 09</div>
+                                <div class="item3">Flex Item 10</div>
+                                <div class="item3">Flex Item 11</div>
+                            </div>
+                
+            <p>Flex Wrap Wrap</p>
+            <div class="container display-flex flexwrap-wrap">
+                <div class="item3">Flex Item 01</div>
+                <div class="item3">Flex Item 02</div>
+                <div class="item3">Flex Item 03</div> 
+                <div class="item3">Flex Item 04</div> 
+                <div class="item3">Flex Item 05</div> <!--faz com que os elementos quebra linha para melhor organização-->
+                <div class="item3">Flex Item 06</div>
+                <div class="item3">Flex Item 07</div>
+                <div class="item3">Flex Item 08</div>
+                <div class="item3">Flex Item 09</div>
+                <div class="item3">Flex Item 10</div>
+                <div class="item3">Flex Item 11</div>
+            </div>
+
+            <p>Flex Flow</p>
+            <div class="container display-flex flex-flow">
+                <div class="item4">Flex Item 01</div>
+                <div class="item4">Flex Item 02</div>
+                <div class="item4">Flex Item 03</div> <!--Flex Flow junta 2 propriedades-->
+                <div class="item4">Flex Item 04</div> 
+                <div class="item4">Flex Item 05</div> <!--Flex Flow da o mesmo resultado que nowrap e wrap porém se faz tudo em um só comando-->
+                <div class="item4">Flex Item 06</div>
+                <div class="item4">Flex Item 07</div> <!-- flex-flow: row wrap;  flex-flow: row nowrap; "flex-flow" aceita row e column-->
+                <div class="item4">Flex Item 08</div>
+                <div class="item4">Flex Item 09</div>
+                <div class="item4">Flex Item 10</div>
+                <div class="item4">Flex Item 11</div>
+            </div>
+
+            <p>Justify Content Space Around</p>
+            <div class="container display-flex justify-content-space-around">
+                <div class="item5">Flex Item 01</div>
+                <div class="item5">Flex Item 02</div>
+                <div class="item5">Flex Item 03</div> <!--justify content vai controlar o alinhaento pelo eixo principal-->
+            </div>                                     <!--Alinha os itens na horizontal-->
+
+            <p>Justify Content Space Evenly</p>
+            <div class="container display-flex justify-content-space-evenly">
+                <div class="item5">Flex Item 01</div>
+                <div class="item5">Flex Item 02</div>
+                <div class="item5">Flex Item 03</div> 
+            </div>
+
+            <p>Justify Content Space Between</p>
+            <div class="container display-flex justify-content-space-between">
+                <div class="item5">Flex Item 01</div>
+                <div class="item5">Flex Item 02</div>
+                <div class="item5">Flex Item 03</div> 
+            </div>
+
+            <p>Align Items Center e Justify Content Center</p>
+            <div class="container divm display-flex align-items-center">
+                <div class="item6">Flex Item 01</div>
+                <div class="item6">Flex Item 02</div>  
+                <div class="item6">Flex Item 03</div> 
+            </div>
+
+            <p>Align Items Flex-End e Justify Content Center</p>
+            <div class="container divm display-flex align-items-end">
+                <div class="item6">Flex Item 01</div>
+                <div class="item6">Flex Item 02</div>
+                <div class="item6">Flex Item 03</div>
+            </div>
+<!--================================ Modificando para modificar os itens=========================================-->
+
+            <p>Componente Flex Do Item flex-grow</p>
+            <div class="container divm display-flex align-items-center">
+                <div class="item7 tam0">Flex-Grow 0</div>
+                <div class="item7 tam1">Flex-Grow 1</div>
+                <div class="item7 tam2">Flex-Grow 2</div>
+            </div>
+
+            <p>Componente Flex Do Item flex-grow com flex-basis</p>
+            <div class="container display-flex">
+                <div class="item7 tam1 base0">Fle</div>
+                <div class="item7 tam1 base0">Flex</div>
+                <div class="item7 tam1 base0">Flex</div>
+                <div class="item7 tam1 base0">Flex-basis com mais conteúdo</div>
+            </div>
+
+            <p>Componente Flex Do Item Order</p>
+            <div class="container display-flex justify-content-space-between">
+                <div class="item8 ordem3">Item 1</div>
+                <div class="item8 ordem2">Item 2</div>
+                <div class="item8 ordem1">Item 3</div> <!--Lembrando que podemos usar no css valores neativos -1 -2 e ele pode ser adicionado direto do inline style="order:1"-->
+                <div class="item8 ordem0">Item 4</div>
+            </div>
+
+            <p>Componente Flex Flex-shrink</p>
+            <div class="container display-flex justify-content-space-between">
+                <div class="item1 flex-shrink-2">Item 1</div>
+                <div class="item1">Item 2</div> <!--por padrão Flex-shrink vem como 1-->
+                <div class="item1">Item 3</div> <!--na class item1 foi coloca uma largura de 200px em cada elemento e eles não pegaram esse taanho por que eles reduz para caber dentro do container -->
+                <div class="item1 ">Item 4</div> <!--com a propriedade Flex-shrink conseuimos fazer com que os itens muda o tamanho e conseguimos manipular seu tamanho dentro do container-->
+            </div> <!--quanto maior o flex-shrink maior vai ser a capacidade de diminuir, e quando colocamos flex-shrink 0 ele não pode reduzir nada -->
+
+
+            <p>Componente Flex com flex 1</p>
+            <div class="container display-flex">
+                <div class="item9 flex">Item 1</div>
+                <div class="item9 flex">Item 2</div>
+                <div class="item9 flex">Item 3</div> <!--Flex é um atalho das propriedade Flex-grow flex-shrink flex-basis-->
+                <div class="item9 flex">Item 4</div> <!--Usamos mais o padrão 0 e 1 -->
+            </div>
+
+            <p>Componente Flex com flex 0</p>
+            <div class="container display-flex">
+                <div class="item9 flex0">Item 1</div>
+                <div class="item9 flex0">Item 2</div>
+                <div class="item9 flex0">Item 3</div> <!--Flex é um atalho das propriedade Flex-grow flex-shrink flex-basis-->
+                <div class="item9 flex0">Item 4</div> <!--Usamos mais o padrão 0 e 1 -->
+            </div>
+
+
+
+            <!--Importante no container estou aplicando display-flex justify-content-center align-items-center flex-direction-row-->
+            <!--Sempre verificar qual o flex-direction estamos usando para ver onde o align-self vai ser aplicado-->
+            <p>Componente Flex Do Item align-self com flex-direction-row</p>
+            <div class="container divm display-flex justify-content-center align-items-center flex-direction-row">
+                <div class="item10 align-self-start">Align-self</div>
+                <div class="item10">Align-self</div>
+                <div class="item10 align-self-end">Align-self</div> <!--onde vamos mudar as posições dos itens dentro da div sempre o inverso do seu eixo-->
+            </div>
+
+            <p>Componente Flex Do Item align-self com flex-direction-column</p>
+            <div class="container divm display-flex justify-content-center align-items-center flex-direction-column">
+                <div class="item10 align-self-start">Align-self</div>
+                <div class="item10">Align-self</div>
+                <div class="item10 align-self-end">Align-self</div>
+            </div>
+
+
+          
+
+    
+
+</body>
+</html>

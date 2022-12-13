@@ -1,0 +1,35 @@
+######## Pequeno projeto com objetivo de entender mais sobre Flex Box e suas propriedades.#########
+
+
+  ==============================Flex Box ===============================
+É normal quando estamos aprendendo o básico de HTML e CSS sair chutando os comandos e ir vendo no browser o resultado,
+então nesse mini projeto quero por em prática o que ultilizamos muito que é o Flex Box.
+Antes de sair usando os framework como bootstrap é importante saber e dominar o Flex Box
+
+
+Todas divs por padrão vem com display block ou seja vai ouculpar toda linha do corpo html da esquerda para direita
+uma embaixo da outra cada div.
+
+Distribuição padrão dos eixos no css temos o primario e o secundário "main axis cross axis"
+
+
+Importante saber que todo elemento pai que tem o display flex os elemento filho fica flexível ou seja se a div pai mudar o tamanho ele se 
+estica com ela se nenhum tamanho tiver definido nos elementos filhos.
+
+Importante aplicando no elemento pai as propriedades direction row revese os elementos muda seu eixo e passam a se alinha direita para a esquerda
+invertendo assim suas posições
+
+Flex Wrap faz com que os elementos dentro da div pai quebra linha ou não 'flexwrap-nowrap' e Flex Wrap Wrap que obriga ele a quebrar linha,
+tem outro como Flex Wrap Wrap reverse mais esses 2 primeiro são os mais usados.
+
+Align Items tem como objetivo alinhar os itens navertical, Lembrando que temos o flex-end e o flex-start
+A propriedade stretch que faz com que os elementos ocupam o contaier todo na vertical
+
+Flex-Grow uma propriedade do item e não do container e vale lembrar que o item vai pegar mais espaço detro do container quanto maior for seu Flex-Grow,
+e por padrão seu valor vem definido como 0 ele é redimensionado conforme o conteúdo dentro dele.
+
+Usando a flex grow com flex-basis ambas no mesmo tamanho o item fica do mesmo tamanho todos independente do comteúdo dentro dele, um ajusta o outro
+para que todos fica do mesmo tamanho ex se um dos itens tiver mais conteúdo ele ficara mais largo e os outros também vai seguir ele.
+
+flex-shrink é usado quando queremos que os itens ou algum em específico não reduza para caber dentro do container e colocarmos um valor de lagura ele vai respeitar
+

@@ -1,0 +1,61 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 400px;
+}
+
+p
+{
+    text-align: center;
+    color:cadetblue;
+    padding-top: 1em;
+}
+
+.container
+{
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+}
+
+.elements
+{
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    text-align: center;
+    font-size: 1em;
+    color: aliceblue;
+    height: 30px;
+    width: calc(33.3333% - 20px);
+}
+/*aqui fazemos o calculo o container tem largura de 600px 
+ai falaos que queremos 3 alementos por linha por conta da medida do container
+600 ÷ 3 33.3333 ai o - 20px é a conta de 5px de margin a direita e 5px de margin a esquerda
+e 5px de padding a direita e 5px a esquerda TOTAL 20PX*/
+
+/*IMPORTANTE SABER QUE O flex-wrap: wrap  ESTÁ DEIXANDO FAZER A QUEBRA DE LINHA*/
+.flexivel
+{
+    display: flex;
+}
+
+.horizotal
+{
+  flex-direction: row;
+}
+
+.quebra
+{
+    flex-wrap: wrap;
+}
+
+.align-content-certer
+{
+    align-content: center;
+}
